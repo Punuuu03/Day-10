@@ -1,17 +1,23 @@
+// index.js (or your main app entry point)
 import express from 'express';
 import mysql from 'mysql';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "crud"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 });
+
+// Rest of your API routes and server setup remains unchanged
 
 app.get('/', (req, res) => {
     const sql = "SELECT * FROM student";
