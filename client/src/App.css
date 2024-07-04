@@ -1,0 +1,303 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  
+
+}
+
+.Hcontainer {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.Hcontainer > div {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+h2 {
+  color: white;
+  background-color: #3f51b5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Hbtn {
+  display: inline-block;
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+.Hbtn:hover {
+  background-color: #303f9f;
+}
+
+.Htable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 18px; 
+}
+
+.Htable th, .Htable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.Htable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+.Hbtn-read,
+.Hbtn-edit,
+.Hbtn-delete {
+  display: inline-block;
+  padding: 5px 10px; 
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 1.0em;
+}
+
+.Hbtn-edit {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.Hbtn-edit:hover {
+  background-color: #0056b3;
+}
+
+.Hbtn-delete {
+  background-color: #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.Hbtn-delete:hover {
+  background-color: #c82333;
+}
+
+
+.Htable td:last-child {
+  width: 120px;
+  white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+  .Hcontainer {
+    padding: 10px;
+  }
+
+  .Htable {
+    font-size: 16px;
+  }
+
+  .Hbtn-read,
+  .Hbtn-edit,
+  .Hbtn-delete {
+    padding: 4px 8px;
+    font-size: 0.9em;
+  }
+}
+
+.Htable th, .Htable td {
+  padding: 12px; 
+  text-align: left;
+}
+
+.Htable th:first-child,
+.Htable td:first-child {
+  width: 10%;
+}
+
+.Htable th:nth-child(2),
+.Htable td:nth-child(2) {
+  width: 30%; 
+}
+
+.Htable th:nth-child(3),
+.Htable td:nth-child(3) {
+  width: 30%; 
+}
+
+.Htable th:last-child,
+.Htable td:last-child {
+  width: 30%; 
+}
+
+
+.Ccontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.Cform {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  max-width: 400px;
+  width: 100%;
+}
+
+.Cform h2 {
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.Cform-group {
+  margin-bottom: 1.5rem;
+}
+
+.Cform-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.Cform-group input {
+  width: 100%;
+  padding: 10px 0px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 380px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Cform-group input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+  outline: none;
+}
+
+.Cbtn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 19px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 135px;
+}
+
+.Cbtn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Hbtn-read {
+  background-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.Hbtn-read:hover {
+  background-color: #218838;
+}
+
+
+.Htable tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .Hcontainer {
+    padding: 10px;
+  }
+
+  .Htable {
+    font-size: 16px;
+  }
+
+  .Cform {
+    padding: 1.5rem;
+  }
+}
+
+.Rcontainer {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.Rdetails {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  background-color: #3f51b5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Rbtn {
+  display: inline-block;
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Rbtn-edit {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.Rbtn:hover, .Rbtn-edit:hover {
+  background-color: #303f9f;
+}
+
+@media (max-width: 768px) {
+  .Rcontainer {
+    padding: 10px;
+  }
+
+  .Rbtn, .Rbtn-edit {
+    padding: 8px 16px;
+  }
+}
